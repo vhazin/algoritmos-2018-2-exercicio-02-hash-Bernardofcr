@@ -11,7 +11,7 @@ int main (void){
     scanf("%d",&t);
     int lista[t];
     for (c=0;c<t;c++){
-        lista[c]=check();
+        lista[c]=checar();
     }
     c=0;
     for (c=0;c<t;c++){
@@ -19,13 +19,13 @@ int main (void){
     }
 }
 
-int check() {
-    int a,b,x,n,c,d,m,i;
+int checar() {
+    unsigned long long a,b,x,n,c,d,m,i;
     int count;
     i=0;
     count=0;
-    scanf("%d %d %d %d %d %d %d", &a, &b, &x, &n, &c, &d, &m);
-    int h1, hfim;
+    scanf("%llu %llu %llu %llu %llu %llu %llu", &a, &b, &x, &n, &c, &d, &m);
+    unsigned long long h1, hfim;
     h1=a*x+b;
     while (i<=n){
         hfim=h1%m;
